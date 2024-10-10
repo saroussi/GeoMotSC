@@ -1,0 +1,93 @@
+/* 
+ * This software was developed at the National Institute of Standards and
+ * Technology by employees of the Federal Government in the course of
+ * their official duties. Pursuant to title 17 Section 105 of the United
+ * States Code this software is not subject to copyright protection and is
+ * in the public domain. This software is an experimental system. NIST assumes
+ * no responsibility whatsoever for its use by other parties, and makes no
+ * guarantees, expressed or implied, about its quality, reliability, or
+ * any other characteristic. We would appreciate acknowledgement if the
+ * software is used.
+ */
+
+.demo {
+    line-height: normal;
+}
+
+.openseadragon {
+  float: left;
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  background-color: black;
+  font-family: arial;
+  margin-right: 0.5em;
+}
+
+form div {
+  margin: 0.5em;
+}
+
+/** carosel*/
+.container {
+    position: relative;
+    margin-top: 3%;
+}
+
+.control {
+    list-style: none;
+}
+
+    .control li {
+        position: absolute;
+        z-index: 99;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #ff0000;
+        background: rgba(0,0,0,0.5);
+        padding: 12px 20px;
+        cursor: pointer;
+    }
+
+        .control li:hover {
+            background: #000;
+        }
+
+        .control li.prev {
+            left: 20px;
+        }
+
+        .control li.next {
+            right: 20px;
+        }
+
+.tns-nav {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+    .tns-nav button {
+        height: 24px;
+        width: 24px;
+        background-color: #a5a5a5;
+        border: none;
+        margin-left: 15px;
+        border-radius: 25%;
+    }
+
+    .tns-nav .tns-nav-active {
+        background-color: #ff0000;
+    }
+/* .scale {
+  animation-name: scale;
+  transform-origin: center;
+}
+@keyframes scale {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+} */
